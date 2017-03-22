@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework #3</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="../favicon.png"/>
+</head>
+<body>
+
+<script>
+    ;(function () {
+        var a = prompt('Введите максимальное значение');
+
+        for (i = 2; i <= a; i++){
+            for (j = 2; j <= i; j++){
+                if (i % j === 0) {
+                    break;
+				}
+            }
+            if(j === i) {
+                alert(i);
+            }
+        }
+    })();
+</script>
+
+</body>
+</html>
